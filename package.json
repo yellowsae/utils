@@ -4,6 +4,7 @@
   "description": "utils for hidie",
   "author": "yellowsea <https://github.com/yellowsae>",
   "license": "MIT",
+  "homepage": "https://github.com/yellowsae/utils#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yellowsae/utils.git"
