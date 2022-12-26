@@ -1,6 +1,6 @@
 {
-  "name": "@hidie/utils",
-  "version": "0.0.1",
+  "name": "@hidie0644/utils",
+  "version": "1.0.0",
   "description": "utils for hidie",
   "author": "yellowsea <https://github.com/yellowsae>",
   "license": "MIT",
@@ -17,11 +17,28 @@
     "tools",
     "typescript"
   ],
-  "main": "index.js",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "vitest",
     "lint": "eslint . ",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "dev": "nr stub",
+    "stub": "unbuild --stub",
+    "build": "rimraf dist && unbuild",
+    "release": "bumpp package.json --commit --push --tag"
   },
   "dependencies": {
     "typescript": "^4.9.4",
@@ -33,9 +50,12 @@
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.3.0",
     "@commitlint/prompt": "^17.3.0",
+    "bumpp": "^8.2.1",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.30.0",
-    "husky": "^8.0.2"
+    "husky": "^8.0.2",
+    "rimraf": "^3.0.2",
+    "unbuild": "^1.0.2"
   },
   "config": {
     "commitizen": {
