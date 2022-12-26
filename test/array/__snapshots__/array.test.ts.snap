@@ -1,0 +1,103 @@
+// Vitest Snapshot v1
+
+exports[`test Array utils > chunk 1`] = `
+[
+  [
+    0,
+    1,
+    2,
+    3,
+  ],
+  [
+    4,
+    5,
+    6,
+    7,
+  ],
+  [
+    8,
+    9,
+  ],
+]
+`;
+
+exports[`test Array utils > createLinkedList 1`] = `
+{
+  "next": {
+    "next": {
+      "next": {
+        "next": {
+          "next": null,
+          "value": 5,
+        },
+        "value": 4,
+      },
+      "value": 3,
+    },
+    "value": 2,
+  },
+  "value": 1,
+}
+`;
+
+exports[`test Array utils > nest 1`] = `
+[
+  {
+    "children": [
+      {
+        "children": [],
+        "id": 2,
+        "pid": 1,
+      },
+      {
+        "children": [],
+        "id": 3,
+        "pid": 1,
+      },
+    ],
+    "id": 1,
+    "pid": 0,
+  },
+]
+`;
+
+exports[`test Array utils > nest 2`] = `
+[
+  {
+    "children": [
+      {
+        "children": [],
+        "id": 2,
+        "pid": 1,
+      },
+      {
+        "children": [],
+        "id": 3,
+        "pid": 1,
+      },
+    ],
+    "id": 1,
+    "pid": "1",
+  },
+]
+`;
+
+exports[`test Array utils > nest 3`] = `
+[
+  {
+    "children": [],
+    "id": 1,
+    "parent": 0,
+  },
+]
+`;
+
+exports[`test Array utils > nest 4`] = `
+[
+  {
+    "children": [],
+    "id": 1,
+    "parent": "1",
+  },
+]
+`;
