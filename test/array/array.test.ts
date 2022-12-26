@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { arrayEqual } from '../../src/array'
+import { arrayEqual } from '@/array'
 
 describe('test Array utils', () => {
   describe('#arrayEqual', () => {
