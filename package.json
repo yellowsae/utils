@@ -1,9 +1,16 @@
 {
-  "name": "hidie-outls",
-  "version": "1.0.0",
+  "name": "@hidie/utils",
+  "version": "0.0.1",
   "description": "utils for hidie",
   "author": "yellowsea <https://github.com/yellowsae>",
-  "license": "ISC",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yellowsae/utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yellowsae/utils/issues"
+  },
   "keywords": [
     "utils",
     "tools",
