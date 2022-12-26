@@ -1,0 +1,36 @@
+{
+  "name": "hidie-outls",
+  "version": "1.0.0",
+  "description": "utils for hidie",
+  "author": "yellowsea <https://github.com/yellowsae>",
+  "license": "ISC",
+  "keywords": [
+    "utils",
+    "tools",
+    "typescript"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest",
+    "lint": "eslint . ",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "typescript": "^4.9.4",
+    "vitest": "^0.26.2"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.34.0",
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "@commitlint/prompt": "^17.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.30.0",
+    "husky": "^8.0.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "git-cz"
+    }
+  }
+}
