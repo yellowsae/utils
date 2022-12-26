@@ -41,5 +41,8 @@
     "commitizen": {
       "path": "git-cz"
     }
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
