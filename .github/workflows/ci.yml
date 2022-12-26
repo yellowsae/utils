@@ -18,12 +18,12 @@ jobs:
       - name: Set node
         uses: actions/setup-node@v3
         with:
-          node-version: 16.x
+          node-version: 18.x
 
       - name: Setup PNPM
         uses: pnpm/action-setup@v2.2.1
         with:
-          version: 7.1.0
+          version: 7.20.0
 
       - name: Install
         run: pnpm install
@@ -36,7 +36,7 @@ jobs:
 
     strategy:
       matrix:
-        node: [14.x, 16.x]
+        node: [14.x, 16.x, 18.x]
         os: [ubuntu-latest]
       fail-fast: false
 
@@ -46,7 +46,7 @@ jobs:
       - name: Setup PNPM
         uses: pnpm/action-setup@v2.2.1
         with:
-          version: 7.9.0
+          version: 7.20.0
 
       - name: Install
         run: pnpm install
