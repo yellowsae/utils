@@ -1,5 +1,5 @@
 import type { Nullable } from '../types'
-import { isValue } from '@/is/is'
+import { isValue } from '../is/is'
 /**
  * Generate tree structure according by prop
  * 根据指定的属性生成树状结构

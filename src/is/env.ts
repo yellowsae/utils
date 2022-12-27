@@ -1,4 +1,4 @@
-import { toTypeString } from '@/shared'
+import { toTypeString } from '../shared'
 
 /**
  * @descriptions 判断是否是window 对象
