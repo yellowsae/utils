@@ -75,6 +75,7 @@ describe('test Array utils', () => {
   })
 
   it('createLinkedList', () => {
+    expect(createLinkedList([])).toBe(null)
     expect(createLinkedList([1, 2, 3, 4, 5])).toMatchSnapshot()
   })
 

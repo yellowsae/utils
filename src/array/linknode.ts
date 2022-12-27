@@ -2,8 +2,9 @@
  * @description 根据数组创建链表
  */
 import type { LinkedList } from '@/types'
-
-export function createLinkedList<T>(array: Array<T>): LinkedList<T> | null {
+export function createLinkedList(array: []): null
+export function createLinkedList<T>(array: T[]): LinkedList<T>
+export function createLinkedList<T>(array: T[]): LinkedList<T> | null {
   if (!array.length)
     return null
   let currentNode: LinkedList<T> = {
