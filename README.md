@@ -1,5 +1,5 @@
 <!-- TODO logo -->
-<h1 align="center">@hidie/utils</h1>
+<h1 align="center">@hidie0644/utils</h1>
 
 <p align="center">
 Collection of common and useful JavaScript / TypeScript utilities by <a href="https://github.com/yellowsae">@yellowsae</a>.
