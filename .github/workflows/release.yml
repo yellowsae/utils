@@ -27,13 +27,3 @@ jobs:
         env:
           GITHUB_TOKEN: ${{secrets.ACCESS_TOKEN}}
           
-      - name: Install
-        run: pnpm install
-
-      - name: PNPM build
-        run: pnpm build
-
-      - name: Publish to NPM
-        uses: JS-DevTools/npm-publish@v1
-        with:
-          token: ${{ secrets.NPM_TOKEN }}
